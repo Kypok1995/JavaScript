@@ -17,3 +17,8 @@ function Multiply(){
     var mult = 145*8;
     document.getElementById("multiply").innerHTML="145*8= " +mult;
 }
+
+function MultipleMath(){
+    var result = 100 * 5 - (99-44) / 5 +16
+    document.getElementById("multipleMath").innerHTML="100 * 5 - (99-44) // 5 +16 = " +result;
+}
