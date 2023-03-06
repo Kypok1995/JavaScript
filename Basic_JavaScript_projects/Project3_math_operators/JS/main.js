@@ -1,3 +1,7 @@
+var a = 4.6436;
+
+document.write(Math.trunc(a));
+
 function Addition(){
     var math = 2+2;
     document.getElementById("math").innerHTML="2+2=" + math;
@@ -49,6 +53,3 @@ window.alert(Math.random()*100);
 
 document.write(Math.PI);
 
-var a = 4.6436;
-
-document.write(Math.round(a));
