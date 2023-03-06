@@ -14,6 +14,3 @@ function OnCLick(){ //define a finction
     document.getElementById("Buttom_text").innerHTML=str; //put string value into element with ID "Buttom text"
 }
 
-function displayDate(){
-    document.getElementById("demo").innerHTML=Date();
-}
