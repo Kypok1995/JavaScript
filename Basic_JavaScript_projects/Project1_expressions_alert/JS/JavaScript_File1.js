@@ -13,3 +13,7 @@ function OnCLick(){ //define a finction
     var str = "Here is my buttom text"; //create a variable 
     document.getElementById("Buttom_text").innerHTML=str; //put string value into element with ID "Buttom text"
 }
+
+function displayDate(){
+    document.getElementById("demo").innerHTML=Date();
+}
