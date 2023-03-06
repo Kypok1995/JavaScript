@@ -46,3 +46,9 @@ function Decrement(){
 }
 
 window.alert(Math.random()*100);
+
+document.write(Math.PI);
+
+var a = 4.6436;
+
+document.write(Math.round(a));
