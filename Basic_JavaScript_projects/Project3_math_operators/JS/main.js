@@ -27,3 +27,8 @@ function Remainder(){
     var remind = 25% 6;
     document.getElementById("remind").innerHTML="Than you devide 25 by the 6, your current reminder is: " + remind;
 }
+
+function Negative(){
+    var x = 228;
+    document.getElementById("negative").innerHTML="Opposite of 228 is: " + -x;
+}
