@@ -1,7 +1,15 @@
-var Text = "You\' are fucking cockroach: \"I'll kill you like a freaking dog!\"", Dad="Bobby", Mother="Julia";
-var Text2 = " Sorry, it is a bad day today";
+window.alert("Hello world!");
+document.write("Here is document write method");
 
-function OnCLick(){
-    var str = "Here is my buttom text";
-    document.getElementById("Buttom_text").innerHTML=str;
+var Text = "This is a beginning of the string";
+var Text2 = " Here is end of the string";
+
+document.write(Text + Text2); // Concatenate strings variables together
+
+document.write(568*226); //expression
+
+
+function OnCLick(){ //define a finction
+    var str = "Here is my buttom text"; //create a variable 
+    document.getElementById("Buttom_text").innerHTML=str; //put string value into element with ID "Buttom text"
 }
