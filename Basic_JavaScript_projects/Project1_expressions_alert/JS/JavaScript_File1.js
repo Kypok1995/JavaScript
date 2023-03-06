@@ -1,1 +1,1 @@
-window.alert("Hello world");
+document.write("Here is document write method");
