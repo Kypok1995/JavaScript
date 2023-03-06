@@ -1,1 +1,3 @@
-document.write("Here is document write method");
+var Text = "You are fucking cockroach"
+
+document.write(Text);
