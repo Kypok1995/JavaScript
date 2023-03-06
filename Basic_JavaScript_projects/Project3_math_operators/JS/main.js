@@ -32,3 +32,15 @@ function Negative(){
     var x = 228;
     document.getElementById("negative").innerHTML="Opposite of 228 is: " + -x;
 }
+
+function Increment(){
+    var inc = 5;
+    inc++;
+    document.getElementById("increment").innerHTML=inc;
+}
+
+function Decrement(){
+    var dec = 5.41;
+    dec--;
+    document.getElementById("decrement").innerHTML=dec;
+}
