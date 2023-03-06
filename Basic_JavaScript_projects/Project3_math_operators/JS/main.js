@@ -22,3 +22,8 @@ function MultipleMath(){
     var result = 100 * 5 - (99-44) / 5 +16
     document.getElementById("multipleMath").innerHTML="100 * 5 - (99-44) // 5 +16 = " +result;
 }
+
+function Remainder(){
+    var remind = 25% 6;
+    document.getElementById("remind").innerHTML="Than you devide 25 by the 6, your current reminder is: " + remind;
+}
