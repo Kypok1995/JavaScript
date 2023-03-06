@@ -44,3 +44,5 @@ function Decrement(){
     dec--;
     document.getElementById("decrement").innerHTML=dec;
 }
+
+window.alert(Math.random()*100);
