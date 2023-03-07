@@ -4,7 +4,7 @@ function Dictionary(){
         age: 27,
         hometown: "Novosibirsk",
         occupation: "game-developer",
-        occupation: "banker"
-    }
-    document.getElementById("dictionary").innerHTML=Dict.occupation;
+    };
+    delete Dictionary.hometown;
+    document.getElementById("dictionary").innerHTML=Dict.hometown;
 }
