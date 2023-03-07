@@ -40,3 +40,7 @@ var MyBook = new Book("Hyperion", "Dan Simmons", 1995, "Science fiction");
 function New_Function(){
     document.getElementById("new_and_this").innerHTML="I am currently reading a book names: " + MyBook.Book_Name +" written by author " + MyBook.Book_Author + " at the year: " + MyBook.Book_Year + "it's genre is: " + MyBook.Book_Genre;
 }
+
+var package = 10;
+
+console.log(package);
