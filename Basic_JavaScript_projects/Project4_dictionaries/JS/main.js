@@ -8,3 +8,5 @@ function Dictionary(){
     delete Dict.hometown; //tried delete keyword to delete KVP for hometown
     document.getElementById("dictionary").innerHTML=Dict.hometown; //to searchmy dictionary for hometown
 }
+
+document.write("10"+5);
