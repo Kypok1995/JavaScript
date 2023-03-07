@@ -5,6 +5,6 @@ function Dictionary(){
         hometown: "Novosibirsk",
         occupation: "game-developer",
     };
-    delete Dictionary.hometown;
+    delete Dict.hometown;
     document.getElementById("dictionary").innerHTML=Dict.hometown;
 }
