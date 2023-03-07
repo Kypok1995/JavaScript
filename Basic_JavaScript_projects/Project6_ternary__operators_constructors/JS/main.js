@@ -5,7 +5,7 @@ function Ride_Function(){
     document.getElementById("Ride").innerHTML=Can_ride + " to ride";
 }
 
-unction Vote_Function(){
+function Vote_Function(){
     var Age, Can_vote;
     Age = document.getElementById("Age").value;
     Can_vote = (Age < 18) ? "you are too young ":"you are old enough ";
