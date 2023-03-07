@@ -18,3 +18,5 @@ document.write(5<=4)
 console.log(5+13);
 
 console.log(10<5);
+
+document.write((10+2)==13);
