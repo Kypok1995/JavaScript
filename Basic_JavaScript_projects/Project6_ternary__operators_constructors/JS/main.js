@@ -5,6 +5,7 @@ function Ride_Function(){
     document.getElementById("Ride").innerHTML=Can_ride + " to ride";
 }
 
+
 function Vote_Function(){
     var Age, Can_vote;
     Age = document.getElementById("Age").value;
