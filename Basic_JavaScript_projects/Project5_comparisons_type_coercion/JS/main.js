@@ -30,3 +30,8 @@ document.write(A===B); // display true, as they have same values and types
 document.write(A===C); //display false as they have different values and types
 document.write(A===D); //display false as it is different types
 document.write(A===E); // display false, as values are different
+
+document.write(10>5 && 5<7); // AND operator, returns true
+document.write(5<=5 && 10<7); // AND operator, returns false
+document.write(5=5 || 10<7)// OR operator, returns true 
+document.write(5<4 || 10>12);// OR operator, returns false
