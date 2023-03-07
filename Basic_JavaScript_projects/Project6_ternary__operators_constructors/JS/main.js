@@ -12,3 +12,18 @@ function Vote_Function(){ // analog of ride_function, checks if user is older th
     Can_vote = (Age < 18) ? "you are too young ":"you are old enough ";
     document.getElementById("Vote").innerHTML=Can_vote + " to vote";
 }
+
+function Vehicle(Make, Model, Year, Color){ // constructor for objects Vehicle
+    this.Vehicle_Make=Make;
+    this.Vehicle_Model=Model;
+    this.Vehicle_Year=Year;
+    this.Vehicle_Color=Color;
+}
+
+var Jack = new Vehicle("Dodge", "Viper", 2020, "Red"); // created an instance of Vehicle
+var Emily = new Vehicle("Jeep", "Trail Hawk", 2019, "White and Black");
+var Erik = new Vehicle("Ford", "Pinto", 1978, "Blue");
+
+function My_Function(){ // function to assign values of instance to some HTML paragraph
+    document.getElementById("Keywords_and_Constructors").innerHTML= "Jack drives a " +Jack.Vehicle_Model + " colored in" + Jack.Vehicle_Color + " manufactured at " + Jack.Vehicle_Year;
+}
