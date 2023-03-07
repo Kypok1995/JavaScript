@@ -14,3 +14,5 @@ document.write(-2e310) //to display negative infinity
 
 document.write(10>5); //to display true
 document.write(5<=4)
+
+console.log(5+13);
