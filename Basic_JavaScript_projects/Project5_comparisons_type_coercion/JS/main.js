@@ -35,3 +35,11 @@ document.write(10>5 && 5<7); // AND operator, returns true
 document.write(5<=5 && 10<7); // AND operator, returns false
 document.write(5==5 || 10<7)// OR operator, returns true 
 document.write(5<4 || 10>12);// OR operator, returns false
+
+function NotFunction(){
+    document.getElementById("not").innerHTML=!(20>10); // return false, as statement is true
+}
+
+function NotFunction1(){
+    document.getElementById("not1").innerHTML=!(20<10); // return true, as statement is false
+}
