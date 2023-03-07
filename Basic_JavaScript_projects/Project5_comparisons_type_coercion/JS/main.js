@@ -11,3 +11,6 @@ function NotANumber(){
 document.write(2e310) //to display infinity
 
 document.write(-2e310) //to display negative infinity
+
+document.write(10>5); //to display true
+document.write(5<=4)
