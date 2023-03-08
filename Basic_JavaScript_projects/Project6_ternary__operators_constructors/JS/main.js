@@ -28,17 +28,17 @@ function My_Function(){ // function to assign values of instance to some HTML pa
     document.getElementById("Keywords_and_Constructors").innerHTML= "Jack drives a " +Jack.Vehicle_Model + " colored in" + Jack.Vehicle_Color + " manufactured at " + Jack.Vehicle_Year;
 }
 
-function Book(Name, Author, Year, Genre){
+function Book(Name, Author, Year, Genre){ // another constructor for the Book
     this.Book_Name=Name;
     this.Book_Author=Author;
     this.Book_Year=Year;
     this.Book_Genre=Genre;
 }
 
-var MyBook = new Book("Hyperion", "Dan Simmons", 1995, "Science fiction");
+var MyBook = new Book("Hyperion", "Dan Simmons", 1995, "Science fiction"); // new instance of the Book
 
-function New_Function(){
-    document.getElementById("new_and_this").innerHTML="I am currently reading a book names: " + MyBook.Book_Name +" written by author " + MyBook.Book_Author + " at the year: " + MyBook.Book_Year + "it's genre is: " + MyBook.Book_Genre;
+function New_Function(){ // function which use created instance of the Book to pass it's values to the HTML element
+    document.getElementById("new_and_this").innerHTML="I am currently reading a book named: " + MyBook.Book_Name +" written by author " + MyBook.Book_Author + " at the year: " + MyBook.Book_Year + " ,it's genre is: " + MyBook.Book_Genre;
 }
 
 function Count_Function(){ // main function to execute at HTML
