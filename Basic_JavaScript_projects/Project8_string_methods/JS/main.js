@@ -31,3 +31,8 @@ function NumberToStringFunction(){
     console.log(typeof str);
     document.getElementById("num_to_str").innerHTML=str;
 }
+
+function PrecisionFunc(){
+    var X = 228.148865765743; //some long number
+    document.getElementById("prec").innerHTML=X.toPrecision(5); //to cut number by defined amount of symbols
+}
