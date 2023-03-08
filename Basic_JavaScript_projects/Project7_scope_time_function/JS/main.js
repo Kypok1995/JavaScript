@@ -23,11 +23,11 @@ Local_variable1();
 Local_variable2();
 
 function DateFunction(){
-    if (new Date().getHours()< 12){ // Date().getHours() function return current hour as a integer (0-23)
-        document.getElementById("hours").innerHTML="How was your lunch today?"
+    if (new Date().getHours()> 12){ // Date().getHours() function return current hour as a integer (0-23)
+        document.getElementById("hours").innerHTML="It is noon already, time to have lunch?"
     }
 
     else{
-        document.getElementById("hours").innerHTML="Good morning!"
+        document.getElementById("hours").innerHTML="Good morning, it is not a noon yet!"
     }
 }
