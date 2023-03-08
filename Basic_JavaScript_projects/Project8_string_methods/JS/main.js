@@ -12,3 +12,9 @@ function sliceFunction(){
     var extract = sentense.slice(0,7); // slice method to cut strings between 32nd and 38th letters
     document.getElementById("slice").innerHTML=extract;
 }
+
+function upperFunction(){
+    var sentence = "click here to make letters bigger";
+    var uppSentense = sentence.toUpperCase();
+    document.getElementById("uppercase").innerHTML=uppSentense;
+}
