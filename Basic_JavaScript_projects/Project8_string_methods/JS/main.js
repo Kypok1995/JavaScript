@@ -29,5 +29,5 @@ function NumberToStringFunction(){
     var num = 228;
     var str = num.toString();
     document.getElementById("num_to_str").innerHTML=str;
-    document.write(typeof str);
+    console.log(typeof str);
 }
