@@ -31,3 +31,15 @@ function DateFunction(){
         document.getElementById("hours").innerHTML="Good morning, it is not a noon yet!"
     }
 }
+
+function Alko_function(){
+    var Age; // declare a variable for conditional statement
+    Age=document.getElementById("Age").value; // assign a variable value of user's input
+    if (Age >=18){ //check condition 
+        document.getElementById("Alko").innerHTML="You can buy some vodka here!"
+    }
+
+    else{
+        document.getElementById("Alko").innerHTML="You are too small for vodka, call your dad"
+    }
+}
