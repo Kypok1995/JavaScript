@@ -8,7 +8,7 @@ function concatFunction(){
 }
 
 function sliceFunction(){
-    var sentense = "BMW M3 is a car I am planning to buy"; // full sentense 
+    var sentense = " BMW M3 is a car I am planning to buy"; // full sentense 
     var extract = sentense.slice(0,7); // slice method to cut strings between 32nd and 38th letters
     document.getElementById("slice").innerHTML=extract;
 }
