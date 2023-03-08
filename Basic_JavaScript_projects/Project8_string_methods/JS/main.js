@@ -9,6 +9,6 @@ function concatFunction(){
 
 function sliceFunction(){
     var sentense = "I am planning to purchase a new BMW X3"; // full sentense 
-    var extract = sentense.slice(32.38); // slice method to cut strings between 32nd and 38th letters
+    var extract = sentense.slice(32,38); // slice method to cut strings between 32nd and 38th letters
     document.getElementById("slice").innerHTML=extract 
 }
