@@ -28,6 +28,6 @@ function searchFunction(){
 function NumberToStringFunction(){
     var num = 228;
     var str = num.toString();
+    console.log(typeof str);
     document.getElementById("num_to_str").innerHTML=str;
-    //console.log(typeof str);
 }
