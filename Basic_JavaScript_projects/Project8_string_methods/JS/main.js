@@ -18,3 +18,9 @@ function upperFunction(){
     var uppSentense = sentence.toUpperCase();// to make all letters capital
     document.getElementById("uppercase").innerHTML=uppSentense;
 }
+
+function searchFunction(){
+    var sentence = "search() searches a string for a value and returns the position of the first match:";
+    var position = sentence.search("value"); // should return position of word value in the whole string
+    document.getElementById("search").innerHTML=position;
+}
