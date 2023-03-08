@@ -41,6 +41,12 @@ function New_Function(){
     document.getElementById("new_and_this").innerHTML="I am currently reading a book names: " + MyBook.Book_Name +" written by author " + MyBook.Book_Author + " at the year: " + MyBook.Book_Year + "it's genre is: " + MyBook.Book_Genre;
 }
 
-var package = 10;
-
-console.log(package);
+function Count_function(){ // main function to execute at HTML
+    document.getElementById("nested_function").innerHTML=Count(); // pass the HTML element with value of Count function
+    function Count(){ // a function which pass its value to HTML element
+        var start_point=9; // variable to handle starting point value 
+        function Plus_one(){start_point+=1;} // small function to add 1 to start_point once it is exectuted 
+        Plus_one(); // calling a plus_one function to add 1 to start_point
+        return start_point; // returns start_point with increased value
+    }
+}
