@@ -27,5 +27,7 @@ function searchFunction(){
 
 function NumberToStringFunction(){
     var num = 228;
-    document.getElementById("num_to_str").innerHTML=num.toString();
+    var str = num.toString();
+    document.getElementById("num_to_str").innerHTML=str;
+    document.write(typeof str);
 }
