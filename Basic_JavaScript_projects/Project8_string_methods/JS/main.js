@@ -24,3 +24,8 @@ function searchFunction(){
     var position = sentence.search("value"); // should return position of word value in the whole string
     document.getElementById("search").innerHTML=position;
 }
+
+function NumberToStringFunction(){
+    var num = 228;
+    document.getElementById("num_to_str").innerHTML=num.toString();
+}
