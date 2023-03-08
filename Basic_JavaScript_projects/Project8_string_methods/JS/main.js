@@ -15,6 +15,6 @@ function sliceFunction(){
 
 function upperFunction(){
     var sentence = "click here to make letters bigger";
-    var uppSentense = sentence.toUpperCase();
+    var uppSentense = sentence.toUpperCase();// to make all letters capital
     document.getElementById("uppercase").innerHTML=uppSentense;
 }
