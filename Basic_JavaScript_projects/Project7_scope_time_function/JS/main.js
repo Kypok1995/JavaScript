@@ -1,10 +1,10 @@
 var X =100;
 
-function Global_variable1(){
+function Global_variable1(){ // would work, as variable is global
     document.write(X*5);
 }
 
-function Global_variable2(){
+function Global_variable2(){ // work as well, variable is global
     document.write(X/3);
 }
 
@@ -21,3 +21,13 @@ Global_variable1();
 Global_variable2();
 Local_variable1();
 Local_variable2();
+
+function DateFunction(){
+    if (new Date().getHours()< 12){ // Date().getHours() function return current hour as a integer (0-23)
+        document.getElementById("hours").innerHTML="How was your lunch today?"
+    }
+
+    else{
+        document.getElementById("hours").innerHTML="Good morning!"
+    }
+}
