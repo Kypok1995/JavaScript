@@ -8,13 +8,14 @@ function Global_variable2(){ // work as well, variable is global
     document.write(X/3);
 }
 
-function Local_variable1(){
+function Local_variable1(){ // would work, we use a local variable within a function
     var A = 228;
     document.write(A-1488);
 }
 
-function Local_variable2(){
+function Local_variable2(){ // would not work, local variable is not accessiable by this function
     document.write(A+555);
+    console.log(A);// to debug function, A is not existing in this scope
 }
 
 Global_variable1();
