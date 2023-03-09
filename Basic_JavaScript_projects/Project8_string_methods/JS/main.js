@@ -43,7 +43,7 @@ function fixFunction(){
 }
 
 function valueFunction(){
-    var X = 228;
+    var X = 228.775;
     document.getElementById("value").innerHTML=X.valueOf();
 }
 
