@@ -36,3 +36,9 @@ function PrecisionFunc(){
     var X = 228.148865765743; //some long number
     document.getElementById("prec").innerHTML=X.toPrecision(5); //to cut number by defined amount of symbols
 }
+
+function fixFunction(){
+    var num = 414.525252;
+    document.getElementById("fix").innerHTML=num.toFixed(2)//to leave fixed ampount of decimals
+}
+
