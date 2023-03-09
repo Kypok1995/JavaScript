@@ -39,6 +39,11 @@ function PrecisionFunc(){
 
 function fixFunction(){
     var num = 414.525252;
-    document.getElementById("fix").innerHTML=num.toFixed(2)//to leave fixed ampount of decimals
+    document.getElementById("fix").innerHTML=num.toFixed(2)//to leave fixed ampount of decimals and round it as well
+}
+
+function valueFunction(){
+    var X = 228;
+    document.getElementById("value").innerHTML=X.valueOf();
 }
 
