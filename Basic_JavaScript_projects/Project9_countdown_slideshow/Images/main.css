@@ -1,4 +1,4 @@
-*{box-sizing: border-box;}
+*{box-sizing: border-box}
 
 /*slideshow container*/
 .slideshow-container{
@@ -34,18 +34,28 @@
 
 .next{
     right: 0;
-    border-radius: 0 3px 3px 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* add a black background on hover*/
 .prev:hover,
 .next:hover{
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /*caption text*/
 .text{
     color:#f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext{
+    color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
