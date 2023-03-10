@@ -16,20 +16,20 @@ function tick(){
 tick();
 }
 
-let slideIndex =1;
-showSlides(slideIndex);
+let slideIndex =1;//variable for holding current slide index
+showSlides(slideIndex);//calling a function
 
 //next or previous controls
-function plusSlides(n){
+function plusSlides(n){ // this function change an index of slides to +1
     showSlides(slideIndex += n);
 }
 
 //thumbnail image control
-function currentSlide(n){
+function currentSlide(n){ //this function holds current slide
     showSlides(slideIndex = n);
 }
 
-function showSlides(n){
+function showSlides(n){ // main function to change a slide index
     let i;
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
