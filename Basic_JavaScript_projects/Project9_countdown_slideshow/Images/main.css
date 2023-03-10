@@ -37,3 +37,46 @@
     border-radius: 0 3px 3px 0;
 }
 
+/* add a black background on hover*/
+.prev:hover,
+.next:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*caption text*/
+.text{
+    color:#f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* the dots/bullets/indicators*/
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover{
+    background-color: #717171;
+}
+
+/*fading animation*/
+.fade{
+    animation-name: fade;
+    animation-duration: 1.6s;
+}
+
+/*fading animation*/
+@keyframes fade {
+    from{opacity: 0.4}
+    to {opacity: 1;}
+}
