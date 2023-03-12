@@ -71,5 +71,30 @@ for (let i = 0; i < 10; i++) {
   }
   document.getElementById("demo").innerHTML=text;
 
+  function food_func(){
+    var output;
+    var foodchoice=document.getElementById("food_input").value;
+    var reg = "  is a really tasty food";
+    switch(foodchoice){
+        case "Pizza":
+        output="pizza" + reg;
+        break;
+        
+        case "Burger":
+        output="Burger" + reg;
+        break;
+
+        case "Borsch":
+        output="Borsch" + reg;
+        break;
+
+        case "Sausage":
+        output="Sausage" + reg;
+        break;
+    }
+    document.getElementById("output").innerHTML=output;
+
+  }
+
 
 
