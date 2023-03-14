@@ -18,7 +18,7 @@ function placeXorO(squareNumber){
     }
 
     selectedSquares.push(squareNumber + activePlayer); // to concatenade them together
-    checkWincondition(); // to check if there is a winner already
+    checkWinconditions(); // to check if there is a winner already
     if (activePlayer === 'X'){ // for changing an active player
         activePlayer = 'O';
     }
@@ -31,22 +31,22 @@ function placeXorO(squareNumber){
 
     if(activePlayer=='O'){
         disableClick();
-        setTimeout(function(){computersTurn();}, 1000 );
+        setTimeout(function () {computersTurn();}, 1000 );
     }
 
     return true // this is needed for computersTurn function
 
     }
-function computersTurn(){
-    let success = false; // for while loop
-    let pickASquare; // to store a random number
-    while (!success){
-        pickASquare = String(Math.floor(Math.random()*9)) // to choose random square 
+    function computersTurn(){
+        let success = false; // for while loop
+        let pickASquare; // to store a random number
+        while (!success){
+            pickASquare = String(Math.floor(Math.random()*9)) // to choose random square 
 
-        if(placeXorO(pickASquare)){//if random number returns true - square is not choosen yet
-            placeXorO(pickASquare);
-            success=true // change a bool and end a loop
+            if(placeXorO(pickASquare)){//if random number returns true - square is not choosen yet
+                placeXorO(pickASquare);
+                success=true; // change a bool and end a loop
+            }
         }
     }
-}
 }
