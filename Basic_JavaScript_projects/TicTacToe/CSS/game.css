@@ -1,4 +1,33 @@
-//
-.center-container{
 
+.center-container{
+width: 608px;
+height: 608px;
+margin: 0 auto;
+margin-top: 50px;
+}
+
+h1{
+    text-align: center;
+    font: bold;
+    text-transform: capitalize;
+}
+
+table{ /* to make 1 big border*/
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+td{
+    cursor: pointer;
+    border: 4px solid rgba(95, 255, 55, 0.8);
+    padding: 0px;
+    width: 200px;
+    height: 200px;
+    filter: contrast(3);
+}
+
+canvas{
+    position:absolute;
+    z-index: 10;
+    pointer-events: none;
 }
