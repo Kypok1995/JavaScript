@@ -9,32 +9,32 @@ function placeXorO(squareNumber){
     // this condition checks if square is already selected
     if (!selectedSquares.some(element => element.includes(squareNumber))){
         let select = document.getElementById(squareNumber);// to retrieve HTML element which was clicked 
-    
-    if (activePlayer ==='X'){// to place X if player is X
-        select.style.backgroundImage = 'url("Image/x.png")';
-    }
-    else{
-        select.style.backgroundImage = 'url("Image/o.png")';
-    }
+        
+        if (activePlayer ==='X'){// to place X if player is X
+            select.style.backgroundImage = 'url("Image/x.png")';
+        }
+        else{
+            select.style.backgroundImage = 'url("Image/o.png")';
+        }
 
-    selectedSquares.push(squareNumber + activePlayer); // to concatenade them together
-    checkWinconditions(); // to check if there is a winner already
-    if (activePlayer === 'X'){ // for changing an active player
-        activePlayer = 'O';
-    }
+        selectedSquares.push(squareNumber + activePlayer); // to concatenade them together
+        checkWinConditions(); // to check if there is a winner already
+        if (activePlayer === 'X'){ // for changing an active player
+            activePlayer = 'O';
+        }
 
-    else{
-        activePlayer = 'X';
-    }
+        else{
+            activePlayer = 'X';
+        }
 
-    audio('./Media/place.mp3');
+        audio('./Media/place.mp3');
 
-    if(activePlayer=='O'){
-        disableClick();
-        setTimeout(function () {computersTurn();}, 1000 );
-    }
+        if(activePlayer ==='O'){
+            disableClick();
+            setTimeout(function () {computersTurn();}, 1000 );
+        }
 
-    return true // this is needed for computersTurn function
+        return true // this is needed for computersTurn function
 
     }
     function computersTurn(){
