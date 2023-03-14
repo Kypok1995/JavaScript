@@ -34,7 +34,7 @@ function placeXorO(squareNumber){
             setTimeout(function () {computersTurn();}, 1000 );
         }
 
-        return true // this is needed for computersTurn function
+        return true; // this is needed for computersTurn function
 
     }
     function computersTurn(){
