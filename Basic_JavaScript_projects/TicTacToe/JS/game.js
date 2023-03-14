@@ -5,7 +5,7 @@ let activePlayer = 'X';
 let selectedSquares = [];
 
 // function to place X or O
-function placeXorO(){
+function placeXorO(squareNumber){
     // this condition checks if square is already selected
     if (!selectedSquares.some(element => element.includes(squareNumber))){
         let select = document.getElementById(squareNumber);// to retrieve HTML element which was clicked 
