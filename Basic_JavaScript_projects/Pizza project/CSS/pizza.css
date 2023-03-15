@@ -28,10 +28,9 @@
     float: right;
 }
 
-.center {
+.center{
     width: 200px;
     height: 200px;
-    float: center;
 }
 
 #showText{
