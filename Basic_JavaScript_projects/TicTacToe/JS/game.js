@@ -83,3 +83,71 @@ function checkWinConditions(){ // function to check if somebody won already
         if (a === true && b === true && c === true){return true;}
     }
 }
+
+function disableClick(){
+    body.style.pointerEvents = 'none'; // make body unclickable
+    setTimeout(function () {body.style.pointerEvents = 'auto';}, 1000 );
+}
+
+function audio (audioURL){// takes a string parameter for music file path
+    let audio = new Audio(audioURL);
+    audio.play();
+}
+
+function drawWinLine(coordX1, coordY1, coordX2, coordY2){
+    const canvas = document.getElementById("win-lines");// to access HTML canvas element
+    const c = canvas.getContext('2d'); // access to 2d methods of canvas
+    let x1 = coordX1 //to identify start of line from axis X
+    y1 = coordY1;
+    x2 = coordX2;
+    y2 = coordY2;
+    x = x1; // temporary store x axis
+    y = y1; // temporary store y asix
+
+
+    function animateLineDrawning(){
+        const animationloop = requestAnimationFrame(animateLineDrawning);// to crate a loop
+        c.clearRect(0, 0, 608, 608);
+        c.beginPath(); //to start drawning a line
+        c.moveTo(x1,y1);
+        c.lineTo(x,y);
+        c.lineWidth = 10;
+        c.strokeStyle = 'rgba(70,255,33,0.8)'; // to set a color of line
+        c.stroke();
+
+        if(x1 <= x2 && y1 <= y2){ // to check if we reach endpoint of line
+            if(x > x2){x +=10;}
+            if(y < y2){y +=10;}
+
+            if (x >= x2 && y >=y2){cancelAnimationFrame(animationloop);}
+        }
+
+        if (x1 <= x2 && y1 >= y2){
+            if (x <x2){x +=10;}
+            if (y > y2){y -= 10;}
+            if(x >= x2 && y <= y2){cancelAnimationFrame(animationloop);}
+        }
+    }
+
+    function clear(){
+        const animationloop = requestAnimationFrame(clear);//to start animation loop
+        c.clearRect(0, 0, 608, 608); // to clear a canvas
+        cancelAnimationFrame(animationloop); // to cancel animation
+    }
+
+    disableClick();// to disable clicking while win sound playing
+    audio('./Media/winGame.mp3');
+    animateLineDrawning();
+    setTimeout(function () {clear(); resetGame();}, 1000);// to set timeout for clearing a canvas
+
+}
+
+function resetGame(){
+    for(let i = 0; i<9; i++){
+        let square = document.getElementById(String (i))//variable to get HTML elemet i
+        square.style.backgroundImage = ''; //actualy clean a canvas
+    
+    }
+    selectedSquares=[]//to reset an array of squares
+}
+
