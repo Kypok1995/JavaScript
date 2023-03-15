@@ -1,6 +1,6 @@
-const Calculator ={ // variable to keep track of numbers
+const Calculator = { // variable to keep track of numbers
     Display_Value: '0', //this will show 0 on calculator screen
-    First_Operand: 'null',//hold a first operand for null
+    First_Operand: null,//hold a first operand for null
     Wait_Second_Operand: false,//check if user inputted second operand
     operator: null, // to hold an operator
 };
