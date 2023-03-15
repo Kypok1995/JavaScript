@@ -24,7 +24,7 @@ function Input_Digit(digit){
 
 function Handle_Operator(Next_Operator){
     const{First_Operand, Display_Value, operator} = Calculator;
-    const Value_Of_Input = perseFloat(Display_Value); // to convert display value into number
+    const Value_Of_Input = parseFloat(Display_Value); // to convert display value into number
     if(operator && Calculator.Wait_Second_Operand){//if operator exist and second opearand is true exit function
         Calculator.operator = Next_Operator;
         return;
