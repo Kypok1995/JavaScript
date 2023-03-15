@@ -69,4 +69,11 @@ function checkWinConditions(){ // function to check if somebody won already
     else if (arrayIncludes('2O', '5O', '8O')) {drawWinLine(508, 50, 508, 558)}
     else if (arrayIncludes('6O', '4O', '2O')) {drawWinLine(100, 508, 510, 90)}
     else if (arrayIncludes('0O', '4O', '8O')) {drawWinLine(100, 100, 520, 520)}
+
+    else if(selectedSquares.length >= 9) { // this func will work if there a 9 selected squares, but nobody won
+        audio('./Media/tie.mp3')
+        setTimeout(function () {resetGame(); }, 500);
+    }
+
+    function 
 }
