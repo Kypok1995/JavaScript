@@ -29,7 +29,7 @@ function getReceipt(){
     getTopping(runningTotal, text1);
 };
 
-function getTopping(){
+function getTopping(runningTotal, text1){
     var toppingTotal = 0;
     var selectedTopping = [];
     var toppingArray = document.getElementsByClassName("toppings");
