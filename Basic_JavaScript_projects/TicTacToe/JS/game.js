@@ -75,5 +75,11 @@ function checkWinConditions(){ // function to check if somebody won already
         setTimeout(function () {resetGame(); }, 500);
     }
 
-    function 
+    function arrayIncludes(squareA, squareB, squareC){
+        const a = selectedSquares.includes(squareA); // to check if there are 3 in a row
+        const b = selectedSquares.includes(squareB);
+        const c = selectedSquares.includes(squareC);
+
+        if (a === true && b === true && c === true){return true;}
+    }
 }
