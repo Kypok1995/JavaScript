@@ -47,10 +47,22 @@ function getTopping(runningTotal, text1){
         toppingTotal = 0;
     }
 
+    var vegetableTotal = 0;
+    var selectedVegetable = [];
+    var vegetableArray = document.getElementsByClassName("vegetables");
+    for (var b = 0; b < vegetableArray.length; b++){
+        if(vegetableArray[b].checked){
+            selectedVegetable.push(vegetableArray[b].value);
+            console.log("selected vegetables are: (" + vegetableArray[b].value + ")");
+            text1 = text1 + vegetableArray[b].value + "<br>";
+        }
+    }
+
+
     runningTotal = (runningTotal +toppingTotal);
     console.log("total selected topings items: " + toppingCount);
     console.log(toppingCount + " topping - 1 free topping = " + "$" + toppingTotal + " .00");
-    console.log(" topping text1"+ text1);
+    console.log(" topping text1" + text1);
     console.log("Purchase Total: " + "$" + runningTotal + " .00");
     document.getElementById("showText").innerHTML = text1;
     document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$" + runningTotal + " .00" + "</strong></h3>";
