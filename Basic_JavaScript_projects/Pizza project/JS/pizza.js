@@ -47,7 +47,6 @@ function getTopping(runningTotal, text1){
         toppingTotal = 0;
     }
 
-    var vegetableTotal = 0;
     var selectedVegetable = [];
     var vegetableArray = document.getElementsByClassName("vegetables");
     for (var b = 0; b < vegetableArray.length; b++){
