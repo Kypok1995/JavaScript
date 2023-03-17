@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <title> Main head element </title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script src="./JS/pizza.js" defer> </script>
+    <link rel="stylesheet" href="./CSS/pizza.css">
+  </head>
+  
+  <body> 
+    <p>Here should be place information about head element tag</p>
+    <p ID="headplace">
+    </p>
+   <script>
+    var H = document.head.tagName;
+    document.getElementById('headplace').innerHTML = H;
+   </script>
+</body>
+</html>
