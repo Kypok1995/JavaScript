@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Basic AJAX Demo</title>
+		<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+			<h2>Get The Latest Content:</h2>
+			<div class='content' id="content">
+				<input type="button" class="button" value="Get Content" id="btn_content" onclick="getContent();"/>
+			</div>
+
+            <div class = 'content' Id="favicon">
+                <input type="button" class="button" value="Get Content" id="fav" onclick="getFavicon();">
+            </div>
+		<script type="text/javascript">
+			
+          var ajax = new XMLHttpRequest();  //setting up xml http request
+          ajax.open('GET', 'content.html' ); // to define request properties
+          ajax.onreadystatechange = function() {
+            if(ajax.readyState == 4){
+                document.getElementById('content').innerHTML = ajax.responseText; //if ajax request succesful - put information received into content tag
+            }
+          }
+
+          function getContent(){
+            ajax.send();
+            document.getElementById('btn_content').style.display = 'none';
+          }
+
+          var ajax2 = new XMLHttpRequest();
+          ajax2.open('GET', 'index.php');
+          ajax2.onreadystatechange = function(){
+            if(ajax2.readyState == 4 && ajax2.status == 200){
+                document.getElementById('favicon').innerHTML=ajax2.responseText;
+            }
+          }
+
+          function getFavicon(){
+            ajax2.send();
+        
+          }
+
+
+		</script>
+    </body>
+</html>
