@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title> JQuery learning page </title> 
+    <meta charset="utf-8">
+  </head>
+  <body> 
+    <script>
+        $(document).ready(function(){ //perform some functon than document (whole HTML file) is ready
+          $("html").append( // to paste some HTML code once document is ready
+            " <body>\
+                <div id='container'>\
+                    <div id='inner'>\
+                        <h1>Basic JQuery </h1>\
+                        <input type='text' ID='inp'>\
+                        <p id='1'>Paragraph 1</p>\
+                        <p id='2'> Paragraph 2</p>\
+                        <p id='3'> Paragraph 3 </p>\
+                    </div>\
+                </div>\
+            </body>\ " );
+          $("#2").css({"color":"red"});// to access css and change p font color to red
+          $("#3").css({"color":"blue"});
+          $('#3').click(function(){
+
+            $('h1').hide();
+          });
+          $('#2').click(function(){
+            $('h1').show();
+
+          });
+
+          $('#inp').on( //event in case of somebody clicked or changed input
+            "click change",
+            function(){
+                console.log("input have been clicked or changed!!!");
+            }
+        );
+        });
+        
+    </script>
+
+
+
+
+</body>
+</html>
