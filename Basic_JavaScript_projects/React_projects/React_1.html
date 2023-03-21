@@ -15,7 +15,7 @@
         var Counter = React.createClass({ // to create component class within React
             render: function() {
                 var time_Passed = Math.round(this.props.time_Passed / 100);
-                var seconds_Passed = time_Passed / 10 + (time_Passed % 10 ? '': ' .0' );
+                var seconds_Passed = time_Passed / 10 + (time_Passed % 10 ? '': '.0' );
                 var text = 'My React code started running ' + seconds_Passed +  ' seconds ago';
                 return React.DOM.p(null, text);
             }
@@ -30,7 +30,7 @@
                 document.getElementById('React_code')
             );
         }, 50);
-        
+
     </script>
 
 
