@@ -10,7 +10,7 @@
   <body> 
 
     <div id="like_button_container"></div>
-    
+
     <script>
         const X = React.createElement;
         
@@ -26,7 +26,7 @@
 
                 return X(
                     'button',
-                    {onclick: () => this.setState({liked: true})},
+                    {onClick: () => this.setState({liked: true})},
                     'Like'
                 );
             }
