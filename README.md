@@ -1,6 +1,22 @@
 # JavaScript
 Repository for JavaScript projects made during TechAcademy bootcamp
 
+<div>
+<h1> Projects</h1>
+<div>
+<li> <a href="https://github.com/Kypok1995/JavaScript_projects/blob/main/Basic_JavaScript_projects/Pizza%20project" target="new"> Pizza menu </a> </li>
+<p> One page website with a JavaScript developed menu functions. It gives an ability to combine different toppings and automatically calculate a price of pizza.</p>
+</div>
+
+<div>
+<li> <a href="https://github.com/Kypok1995/JavaScript_projects/tree/main/Basic_JavaScript_projects/Calculator" target="new"> Calculator </a> </li>
+<p> Simple web-based calculator which supports addition, subtraction, multiplication, division and remainder calculation. </p>
+</div>
+
+<div>
+<li> <a href="https://github.com/Kypok1995/JavaScript_projects/tree/main/Basic_JavaScript_projects/TicTacToe" target="new">Tic-Tac-Toe Game</a> </li>
+<p> Web-based Tic-Tac-Toe game. Allows user to play tic-tac-toe game with a computer. Application based on JavaScript code with implementation of CSS and HTML languages.  </p>
+</div>
 
 <div id="header" align="center">
   <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="200"/>
